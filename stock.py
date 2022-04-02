@@ -74,7 +74,7 @@ valid['Predictions'] = predictions
 
 print(valid)
 
-apple = web.DataReader('AAPL', data_source='yahoo', start='2015-01-01', end='2022-04-01')
+apple = web.DataReader(stock, data_source='yahoo', start=start_date, end=end_date)
 new_df = apple.filter(['Close'])
 last_60 = new_df[-60:].values
 last_60_scaled = sclr.transform(last_60)
