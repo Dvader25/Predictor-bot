@@ -1,0 +1,91 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "How can you help me?",
+        "What can you tell me?",
+        "What can you predict?",
+        "What do you do?"
+      ],
+      "responses": [
+        "I'm a predictor bot! I can tell you about weather and stock market.",
+        "I can tell you about weather forecasts and stock market predictions.",
+        "I use machine learning to make predictions!"
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "How is the weather today?",
+        "Should I go out today?",
+        "When can I go out?",
+        "What is the temperature?",
+        "Is it sunny outside?",
+        "Is it cloudy?",
+        "Is it going to rain?",
+        "Is it cold outside?",
+        "Can I go out?",
+        "How is the weather?"
+      ],
+      "responses": [
+        "I can tell you the forecasts, where do you live?"
+      ]
+    },
+    {
+      "tag": "stock",
+      "patterns": [
+        "Is the stock price going up?",
+        "predict the stock price.",
+        "Should I buy stock?"
+      ],
+      "responses": [
+        "Which stock are you interested in?"
+      ]
+    },
+
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    }
+  ]
+}
