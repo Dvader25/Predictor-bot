@@ -1,3 +1,5 @@
+#functions required for training 
+
 import nltk
 
 nltk.download('punkt')
