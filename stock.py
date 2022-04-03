@@ -1,3 +1,5 @@
+#stock price prediction using a recurrent neural network
+
 import math
 import datetime as dt
 import time
