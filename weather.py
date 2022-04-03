@@ -39,10 +39,10 @@ def construct(location, goodTemp):
         timeHour = i["time"].split(" ")[1] # gets the time in date formate 12/31/1234 12:00 and splits it at the " " and takes the 1nd index
         condHour = i['condition']['code'] # gets the condition, refer to https://www.weatherapi.com/docs/weather_conditions.json
         isDayHour = i['is_day'] # gets the day or night
-        print(f"{timeHour}:") 
+        #print(f"{timeHour}:") 
             
         if condHour <= 1009 and tempHour >= goodTemp and isDayHour != 0: # 1009 is the code for overcast, is day checks if its day LMAO, and i think anything above 5c is a good temp tbh
-            print(f"{timeHour} is a good time to go outside, its {tempHour} degrees celcius and {condHour}") # just some logging
+            #print(f"{timeHour} is a good time to go outside, its {tempHour} degrees celcius and {condHour}") # just some logging
 
             timesOut.append( # add the time to the list 
                 {
@@ -54,7 +54,7 @@ def construct(location, goodTemp):
             )
         else:
             # condition for if its a bad day to go outside
-            print(f"bad weather {i['condition']['text']} and temprature is {tempHour}")
+            #print(f"bad weather {i['condition']['text']} and temprature is {tempHour}")
             timesOut.append(
                 {
                     "time": timeHour,
@@ -64,12 +64,12 @@ def construct(location, goodTemp):
                 }
             )
 
-        print("\n") # new line
+        #print("\n") # new line
 
     # print(timesOut) # log the list
 
 
-    print("\n\n\n ~~ times out ~~ \n\n") # 🎊🌟 fancy stuff 🎇✨
+    #print("\n\n\n ~~ times out ~~ \n\n") # 🎊🌟 fancy stuff 🎇✨
     for i in timesOut:
         # check for consecutive hours where [i]['out'] is true, and how many hours are true consecutively
         if i['out'] == True:
