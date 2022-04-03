@@ -1,3 +1,5 @@
+#training the neural network for natural language processing 
+
 import json
 import numpy as np
 from chatbot import tokenize, stem, bagOfWords
