@@ -79,8 +79,8 @@ def construct(location, goodTemp, key):
                     count += 1 
                 else:
                     break # end the loop once if find a bad hour, execute next part
-
-            print(f"{i['time']} to {timesOut[timesOut.index(i)+count]['time']} is a good time to go outside: \n") # prints a range of good times
+                    
+            returnStatement += f"{i['time']} to {timesOut[timesOut.index(i)+count]['time']} is a good time to go outside: \n"
             print("  " + "_" * 30)
             # print the time condition and temp for the hours between the two times
             for k in timesOut[timesOut.index(i):timesOut.index(i)+count]:
