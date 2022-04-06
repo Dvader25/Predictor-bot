@@ -99,13 +99,3 @@ data = {
 }
 
 torch.save(data, 'data.pth')
-
-
-
-
-
-
-
-
-
-
